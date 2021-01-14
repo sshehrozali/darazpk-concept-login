@@ -1,0 +1,319 @@
+/* Color Palette
+BG: #fffcf9
+Input BG: #b3f5ff
+Border-bottom: #007c8f
+Purple: #340068
+Pink: #ff3347
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Roboto';
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #fffcf9;
+}
+
+    #main-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        border: 0.5px solid #00000025;
+        
+        background: #fffcf9;
+
+        filter: drop-shadow(-3.748px 42.836px 37px rgba(0,0,0,0.57));
+    }
+
+        #main-cont div{
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+            #heading-signin{
+                align-items: flex-start;
+            }
+
+                #heading-signin span{
+                    font-family: 'Playfair Display';
+                    font-weight: 700;
+                    color: #1c1c21;
+                }
+
+            #input-fields div{
+                width: 100%;
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                color: #1c1c21;
+            }
+
+                #input-fields div input{
+                    width: 100%;
+
+                    background: none;
+                    outline: none;
+                    border: none;
+
+                    background: #b3f5ff;
+                    border-bottom: 3px solid #b3f5ff;
+
+                    font-family: 'Roboto';
+                    font-weight: 400;
+                    color: #1c1c21;
+
+                    transition: all .1s;
+                }
+
+                    #input-fields div input:focus{
+                        border-bottom: 3px solid #007c8f;
+                    }
+
+            button{
+                font-family: 'Playfair Display';
+                font-weight: 700;
+                color: white;
+
+                border: none;
+                outline: none;
+
+                filter: drop-shadow(-1.482px 16.935px 22px rgba(0,0,0,0.57));
+                background-image: linear-gradient(130deg, #340068 0%, #ff3347 100%);
+
+                cursor: pointer;
+
+                transition: all .2s;
+            }
+
+                button:hover{
+                    transform: scale(.91);
+                }
+
+            #bottom-txt{
+                flex-direction: row;
+                justify-content: center;
+
+                color: #1c1c21;
+                text-align: center;
+            }
+
+                #bottom-txt b, a{
+                    font-weight: 900;
+                    color: #1c1c21;
+                }
+
+/* Phones, Mobiles and Tablets */
+@media only screen and (max-width: 992px) {
+    
+    body{
+        background: url(BG/phone.svg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+        padding: 4vw;
+    }
+
+        #main-cont{
+            padding: 8vw;
+
+            border-radius: 15%;
+        }
+
+            #heading-signin, #input-fields, button{
+                margin: 4vw;
+            }
+
+                #heading-signin span{
+                    font-size: 10vw;
+                }
+
+                #input-fields{
+                    margin-top: 2vw;
+                }
+
+                    #input-fields div span{
+                        margin: 8px;
+                        margin-left: 0;
+
+                        letter-spacing: 1vw;
+                    }
+
+                    #input-fields div input{
+                        padding: 2vw;
+                    }
+
+                button{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    width: 25vw;
+
+                    margin-bottom: 10vw;
+
+                    padding-top: 2vw;
+                    padding-bottom: 2vw;
+
+                    font-size: large;
+
+                    border-radius: 43px;
+                }
+
+                #bottom-txt{
+                    padding-left: 4vw;
+                    padding-right: 4vw;
+                }
+
+                #bottom-txt span, b, a{
+                    letter-spacing: 1vw;
+                }
+            
+        #tagline{
+            display: none;
+        }
+
+        footer{
+            display: flex;
+            justify-content: center;
+
+            position: absolute;
+            bottom: 2vw;
+
+            z-index: -1;
+        }
+
+            footer span{
+                font-family: 'Gothic A1', sans-serif;
+                font-weight: 400;
+                letter-spacing: 0;
+                color: #1c1c21d3;
+            }
+
+                footer span a{
+                    font-weight: 900;
+                    letter-spacing: 0;
+                    color: #1c1c21d3;
+                }
+}
+
+/* Large Screens, Desktops and above */
+@media only screen and (min-width: 992px) {
+
+    body{
+        background: url(BG/desktop.svg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #main-cont{
+        width: 30vw;
+        height: 30vw;
+
+        padding: 2vw;
+
+        border-radius: 25%;
+    }
+
+        #heading-signin, #input-fields, button{
+            margin: 4%;
+
+            padding-left: 5px;
+        }
+
+            #heading-signin span{
+                font-size: 3vw;
+            }
+
+            #input-fields{
+                margin-top: 2vw;
+            }
+
+                #input-fields div span{
+                    margin: 8px;
+                    margin-left: 0;
+
+                    letter-spacing: 2px;
+                }
+
+                #input-fields div input{
+                    padding: 10px;
+                }
+
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                width: 143px;
+
+                margin-bottom: 40px;
+
+                padding-top: 8px;
+                padding-bottom: 8px;
+
+                font-size: large;
+
+                border-radius: 43px; 
+            }
+
+    #tagline{
+        font-size: xx-large;
+        font-weight: 400;
+        color: #1c1c21;
+
+        letter-spacing: -2px;
+
+        position: absolute;
+        right: 15%;
+        bottom: 45%;
+    }
+
+        #tagline span{
+            font-weight: 900;
+        }
+        
+    footer{
+        display: flex;
+        justify-content: center;
+
+        position: absolute;
+        bottom: 2vw;
+
+        z-index: -1;
+    }
+
+        footer span{
+            font-family: 'Gothic A1', sans-serif;
+            font-weight: 400;
+            letter-spacing: 0;
+            color: #1c1c21d3;
+        }
+
+            footer span a{
+                font-weight: 900;
+                letter-spacing: 0;
+                color: #1c1c21d3;
+            }
+}

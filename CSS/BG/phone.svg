@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="-314.496" y1="1162.952" x2="506.496" y2="-259.048">
+			<stop offset="0" stop-color="#340068"  />
+			<stop offset="1" stop-color="#ff3347"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) } 
+		.txt1 { font-size: 861px;fill: #ffffff;font-weight: 900;font-family: "GothicA1-Black", "Gothic A1" } 
+	</style>
+	<path id="Shape 1 copy 2" class="shp0" d="M279.97 1138.55C-99.72 1240.29 -488.86 1015.61 -590.6 635.93C-692.33 256.24 -467.66 -132.91 -87.97 -234.65C291.72 -336.38 680.86 -111.71 782.6 267.98C884.33 647.67 659.66 1036.81 279.97 1138.55Z" />
+	<text id="d " style="opacity: 0.051;transform: matrix(1.18,0,0,1.18,-13.687,806.116)" >
+		<tspan x="0" y="0" class="txt1">d</tspan>
+	</text>
+</svg>
