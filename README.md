@@ -4,5 +4,7 @@
   <li>
     <img src="Catalouge/phone-catalouge.jpg>
   </li>
-  <li>Desktop</li>
+  <li>
+    <img src="Catalouge/desktop-catalouge.jpg>
+  </li>
 </ul>
